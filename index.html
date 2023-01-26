@@ -20,20 +20,22 @@
 <body>
 
   <header>
-    <img src="./images/logo.svg" alt="Logo Fylo">
-    <nav>
-      <ul>
-        <li>
-          <a href="">Features</a>
-        </li>
-        <li>
-          <a href="">Team</a>
-        </li>
-        <li>
-          <a href="">Sign In</a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <img src="./images/logo.svg" alt="Logo Fylo">
+      <nav>
+        <ul>
+          <li>
+            <a href="">Features</a>
+          </li>
+          <li>
+            <a href="">Team</a>
+          </li>
+          <li>
+            <a href="">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
 
@@ -43,7 +45,11 @@
         <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and
           collaborate with friends, family, and co-workers.</p>
         <div class="input-group">
-          <input type="text" placeholder="Enter yout email...">
+          <div class="input-email">
+            <input type="email" placeholder="Enter yout email...">
+            <p class="alert-invalid">Please check your email</p>
+          </div>
+
           <button>Get Started</button>
         </div>
       </div>
@@ -89,13 +95,16 @@
     </section>
 
     <section>
-      <div>
+      <div class="container-text">
         <h2>Get early access today</h2>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
           our support team would be happy to help you.</p>
       </div>
-      <div>
-        <input type="text" placeholder="email@example.com">
+      <div class="input-group">
+        <div class="input-email">
+          <input type="email" placeholder="email@example.com">
+          <p class="alert-invalid">Please check your email</p>
+        </div>
         <button>Get Started For Free</button>
       </div>
     </section>
@@ -103,43 +112,46 @@
 
   <footer>
 
-    <div>
-      <img src="./images/logo.svg" alt="">
-    </div>
-    <div>
-      <div>
-        <div>
-          <img src="./images/icon-phone.svg" alt="">
-          <p>Phone: +1-543-123-4567</p>
+    <div class="container-footer">
+      <div class="footer-header white">
+        <img src="./images/logo.svg" alt="Logo Fylo">
+      </div>
+      <div class="footer-body">
+        <div class="footer-contacts">
+          <div class="container-icon">
+            <img src="./images/icon-phone.svg" alt="ícon phone">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="container-icon">
+            <img src="./images/icon-email.svg" alt="ícon email">
+            <p>example@fylo.com</p>
+          </div>
         </div>
-        <div>
-          <img src="./images/icon-email.svg" alt="">
-          <p>example@fylo.com</p>
+        <div class="footer-nav">
+          <a href="">About Us</a>
+          <a href="">Jobs</a>
+          <a href="">Press</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="footer-info">
+          <a href="">Contact Us</a>
+          <a href="">Terms</a>
+          <a href="">Privacy</a>
+        </div>
+        <div class="footer-social container-icon white">
+          <a href="">
+            <img src="./images/icon-facebook.svg" alt="">
+          </a>
+          <a href="">
+            <img src="./images/icon-twitter.svg" alt="">
+          </a>
+          <a href="">
+            <img src="./images/icon-instagram.svg" alt="">
+          </a>
         </div>
       </div>
-      <div>
-        <a href="">About Us</a>
-        <a href="">Jobs</a>
-        <a href="">Press</a>
-        <a href="">Blog</a>
-      </div>
-      <div>
-        <a href="">Contact Us</a>
-        <a href="">Terms</a>
-        <a href="">Privacy</a>
-      </div>
-      <div>
-        <a href="">
-          <img src="./images/icon-facebook.svg" alt="">
-        </a>
-        <a href="">
-          <img src="./images/icon-twitter.svg" alt="">
-        </a>
-        <a href="">
-          <img src="./images/icon-instagram.svg" alt="">
-        </a>
-      </div>
     </div>
+
 
   </footer>
 
