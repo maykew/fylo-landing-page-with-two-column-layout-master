@@ -159,6 +159,10 @@ body {
 
 }
 
+main {
+    width: 100%;
+}
+
 header {
     width: 100%;
 }
@@ -220,17 +224,24 @@ section .container-content h1 {
     font-weight: 700;
     font-size: 1.5em;
     padding: 1em 0;
+
+    max-width: 20em;
+    margin: 0 auto;
 }
 
 section .container-content>p {
     padding: 1em;
+    margin: 0 auto;
+    max-width: 40em;
     color: var(--secondary-color);
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 1em auto;
+
+    max-width: 20em;
 }
 
 .input-group input,
@@ -297,6 +308,8 @@ section .container-content h2 {
 section:nth-child(2) .container-content p {
     padding: 0.5em 0;
     text-align: start;
+    max-width: 40em;
+    margin: 0 auto;
 }
 
 section .container-content .container-nav {
@@ -322,7 +335,7 @@ section .container-content .container-nav img {
 }
 
 section article {
-    margin: 1.5em 1.5em 6em 1.5em;
+    margin: 1.5em auto 6em;
     padding: 1.5em;
 
     display: flex;
@@ -333,6 +346,8 @@ section article {
     box-shadow: 0px 0px 15px 5px var(--light-color);
     font-size: 0.8em;
     line-height: 1.5em;
+
+    max-width: 40em;
 }
 
 section article .card-profile {
@@ -364,10 +379,13 @@ section:nth-child(3) {
     flex-direction: column;
     margin: 0;
     background-color: var(--secondary-color);
+
+    width: 100%;
 }
 
 section:nth-child(3) .input-group {
-    margin: 1em 4em 4em 4em;
+    margin: 1em auto 4em;
+    width: 20em;
 }
 
 section:nth-child(3)>div {
@@ -384,6 +402,9 @@ section:nth-child(3) .container-text p {
     color: var(--white-color);
     padding: 1em 0;
     line-height: 1.3em;
+
+    max-width: 40em;
+    margin: 0 auto;
 }
 
 footer {
@@ -504,11 +525,13 @@ footer .footer-social a img:hover {
 
     section .container-content h1 {
         font-family: 'Raleway', sans-serif;
+        margin: 0;
         font-size: 2.5em;
     }
 
     section .container-content>p {
-        padding: 0;
+        margin: 0;
+        padding: 0 5em 0 0;
     }
 
     section .container-img img {
@@ -519,6 +542,7 @@ footer .footer-social a img:hover {
         flex-direction: row;
         justify-content: start;
         align-items: baseline;
+        max-width: none;
         margin: 1em 0 0 0;
     }
 
@@ -538,6 +562,7 @@ footer .footer-social a img:hover {
     section:nth-child(2) .container-content > p {
         padding-right: 8em;
         line-height: 1.2em;
+        margin: 0;
     }
 
     section .container-content h2 {
@@ -595,6 +620,7 @@ footer .footer-social a img:hover {
 
     section:nth-child(3) .container-text p {
         padding: 1em 8em 0 0;
+        margin: 0;
     }
 
     footer .container-footer {
