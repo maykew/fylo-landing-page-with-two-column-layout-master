@@ -489,6 +489,12 @@ footer .footer-social a img:hover {
     filter: invert(45%) sepia(79%) saturate(6413%) hue-rotate(220deg) brightness(102%) contrast(94%);
 }
 
+footer .author {
+    opacity: 50%;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
 @media (min-width: 1200px) {
     body {
         height: 100%;
